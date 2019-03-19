@@ -1,0 +1,16 @@
+{
+    "Cheat Sheet: Decorator": {
+		"prefix": "cheat sheet: decorator",
+		"body": [
+			"from functools import wraps",
+			"def ${1:decorator_name}(func):",
+			"    @wraps(func)",
+			"    def wrapper(*args, **kwargs):",
+			"        print('Called before func!')",
+			"        return func(*args, **kwargs)",
+			"",
+			"    return wrapper"
+		],
+		"description": "Template code for a python function decorator using functools.wraps."
+	}
+}
